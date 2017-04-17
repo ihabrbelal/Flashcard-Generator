@@ -1,4 +1,4 @@
-var SimpleCard = require("./cards.js");
+var Cards = require("./cards.js");
 var inquirer = require("inquirer");
 var dataFile = require("./data.txt");
 var fs = require("fs");
@@ -43,7 +43,7 @@ var quiz = function(dataFile, x) {
 
             if (data[x].hasOwnProperty("front")) {
 
-                var gameCard = new SimpleCard(data[x].front, data[x].back);
+                var gameCard = new Cards(data[x].front, data[x].back);
                 var gameQuestion = gameCard.front;
                 var gameAnswer = gameCard.back.toLowerCase();
             }
@@ -61,7 +61,7 @@ var quiz = function(dataFile, x) {
 
             }]).then(function(answers) {
 
-                if (answers.question.toLowerCase().indexOf(gameAnswer) > -1) {
+                if (answers.question.toLowerCase() === gameAnswer) {
                     console.log('Correct!');
                     correctCounter++;
                     x++;
