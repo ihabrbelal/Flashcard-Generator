@@ -37,13 +37,13 @@ var quiz = function(dataFile, x) {
 
     fs.readFile(dataFile, "utf8", function(error, data) {
 
-        var jsonContent = JSON.parse(data);
+        var data = JSON.parse(data);
 
-        if (x < jsonContent.length) {
+        if (x < data.length) {
 
-            if (jsonContent[x].hasOwnProperty("front")) {
+            if (data[x].hasOwnProperty("front")) {
 
-                var gameCard = new SimpleCard(jsonContent[x].front, jsonContent[x].back);
+                var gameCard = new SimpleCard(data[x].front, data[x].back);
                 var gameQuestion = gameCard.front;
                 var gameAnswer = gameCard.back.toLowerCase();
             }
