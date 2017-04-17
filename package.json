@@ -1,0 +1,22 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "a flashcard app that allows the user to create both simple and cloze-formatted questions",
+  "main": "flashcard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hornsten/Flashcard-Generator.git"
+  },
+  "author": "jess",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hornsten/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/hornsten/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^2.0.0"
+  }
+}

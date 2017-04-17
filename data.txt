@@ -1,0 +1,20 @@
+[
+{
+"front":" Who was the first president of Untied States of America?",
+"back":" George Washington"
+},{
+"front":"What was the agreement signed by British and American Leader that stated the United States of America was a free and independent country?",
+"back":"Treaty of Paris"
+},{
+"front":"Who was the English religious sect who hoped to purify the Anglican church of Roman Catholic traces in practice & organization?",
+"back":"Puritans"
+},{
+"front":"What is the name of as act prohibited all foreign trade in 1807??",
+"back":" Embargo"
+},{
+"front":"What is the name of term was used to describe World War I at the time of the war ?",
+"back":"Great war"
+},{
+"front":"Who was credited with invention of the incandescent light bulb??",
+"back":" Thomas Edison"
+}]
