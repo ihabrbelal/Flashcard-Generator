@@ -75,13 +75,22 @@ var quiz = function(dataFile, x) {
 
             })
 
+        } else if (wrongCounter < correctCounter) {
+            console.log('*******************************')
+            console.log(' Congratulation .. you WON  ', "\n Your result: ");
+            console.log('   * Correct:', correctCounter, '\n   * Wrong:  ', wrongCounter);
+            console.log('Thank you for taking the quiz');
+            console.log('*******************************')
+
+            correctCounter = 0;
+            wrongCounter = 0;
+
         } else {
-            console.log('**************************************************')
-
-            console.log('Thank you for taking the quiz', "\n Your result: ");
-            console.log('\n correct: ', correctCounter, '\n wrong: ', wrongCounter);
-
-            console.log('**************************************************', '\n')
+            console.log('*******************************')
+            console.log('Sorry .. you lost  ', "\n Your result is: ");
+            console.log('   * Correct:', correctCounter, '\n   * Wrong:  ', wrongCounter);
+            console.log('Thank you for taking the quiz');
+            console.log('*******************************')
 
             correctCounter = 0;
             wrongCounter = 0;
